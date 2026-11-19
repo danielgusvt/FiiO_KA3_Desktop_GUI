@@ -87,8 +87,9 @@ public:
         sendCommand(CMD_BALANCE, clamp(right, 0, 12), clamp(left, 0, 12));
     }
 
+    // `index` is 0-based (0..6); the device numbers filters 1..7.
     void setFilter(uint8_t index) {
-        sendCommand(CMD_FILTER, 0x07, index);
+        sendCommand(CMD_FILTER, 0x07, clamp(index, 0, 6) + 1);
     }
 
     void setIndicatorLight(uint8_t mode) {
@@ -172,7 +173,7 @@ public:
 
         s.power_save = (res[1] == 1);
         s.hardware_mute = (res[2] == 1);
-        s.filter_index = res[3];
+        s.filter_index = clamp(res[3] - 1, 0, 6); // device numbers filters 1..7
         s.gain_high = (res[4] == 2);
         s.impedance_high = (res[5] == 2);
         s.indicator_mode = res[6];
