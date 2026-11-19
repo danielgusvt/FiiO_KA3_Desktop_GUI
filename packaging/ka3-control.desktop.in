@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=FiiO KA3 Control
+Comment=Control the FiiO KA3 USB DAC
+Exec=@EXEC@
+Icon=@ICON@
+Terminal=false
+Categories=AudioVideo;Audio;

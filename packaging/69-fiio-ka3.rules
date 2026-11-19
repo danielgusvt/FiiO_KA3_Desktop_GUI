@@ -1,0 +1,2 @@
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="2972", ATTRS{idProduct}=="0053", MODE="0660"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="2972", ATTRS{idProduct}=="0053", TAG+="uaccess"
