@@ -7,6 +7,14 @@ the lowpass filter, and shows the firmware version and the current sample rate.
 The USB protocol was reverse-engineered from the FiiO Control Android app; see
 [docs/FiiO_KA3_Reverse_Engineering.md](docs/FiiO_KA3_Reverse_Engineering.md).
 
+## Screenshots
+
+![Device page](screenshots/Screenshot_20261119_183335.png)
+
+![Audio page](screenshots/Screenshot_20261119_183407.png)
+
+![Filters page](screenshots/Screenshot_20261119_183424.png)
+
 ## Requirements
 
 - Qt 6.8 or newer with Quick, Quick Controls 2 and Svg (developed with 6.9.1)
